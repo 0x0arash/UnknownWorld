@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnknownWorld.Maker.World
 {
-    public class World
+    public class World 
     {
         private Random random;
 

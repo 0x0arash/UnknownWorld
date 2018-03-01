@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnknownWorld", "UnknownWorl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnknownWorld.Maker", "..\UnknownWorld.Maker\UnknownWorld.Maker.csproj", "{8FD2E31A-7670-40A6-961D-BEAAB36C9C6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnknownWorld.Core", "..\UnknownWorld.Core\UnknownWorld.Core.csproj", "{F66E9251-E2F0-4411-8C21-8F9D5280DAB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8FD2E31A-7670-40A6-961D-BEAAB36C9C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FD2E31A-7670-40A6-961D-BEAAB36C9C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FD2E31A-7670-40A6-961D-BEAAB36C9C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F66E9251-E2F0-4411-8C21-8F9D5280DAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66E9251-E2F0-4411-8C21-8F9D5280DAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66E9251-E2F0-4411-8C21-8F9D5280DAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66E9251-E2F0-4411-8C21-8F9D5280DAB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
