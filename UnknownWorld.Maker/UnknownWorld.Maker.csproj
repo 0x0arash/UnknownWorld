@@ -40,11 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game\Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="World\Cell.cs" />
     <Compile Include="World\Section.cs" />
     <Compile Include="World\World.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\UnknownWorld.Core\UnknownWorld.Core.csproj">
+      <Project>{f66e9251-e2f0-4411-8c21-8f9d5280dab2}</Project>
+      <Name>UnknownWorld.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
