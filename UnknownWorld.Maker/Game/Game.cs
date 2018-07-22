@@ -12,24 +12,47 @@ namespace UnknownWorld.Core.Game
     {
         private World world;
 
-        public Game()
-        {
+        private int worldSeed;
+        private int startSection;
+        private int sectionCount;
 
+        private bool started = false;
+
+        public Game(int sectionCount=1, int startSection = 1, int worldSeed=-1)
+        {
+            this.worldSeed = worldSeed;
+            this.startSection = startSection;
+            this.sectionCount = sectionCount;
+            Initialize();
         }
 
         public void Initialize()
         {
-            throw new NotImplementedException();
+            world = new World(worldSeed, sectionCount, startSection);
+            world.Initialize();
         }
 
         public void Update()
         {
-            throw new NotImplementedException();
+            world.Update();
         }
 
         public void Draw()
         {
-            throw new NotImplementedException();
+            world.Draw();
         }
+
+        public void Start()
+        {
+            if (started)
+                throw new Exception("Game has already started");
+            else
+            {
+                started = true;
+                //Play();
+            }
+        }
+
+        public int GetWorldSeed() => world.GetSeed();
     }
 }

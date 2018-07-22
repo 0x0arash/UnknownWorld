@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnknownWorld.Maker\UnknownWorld.Maker.csproj">
+      <Project>{8FD2E31A-7670-40A6-961D-BEAAB36C9C6F}</Project>
+      <Name>UnknownWorld.Maker</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
