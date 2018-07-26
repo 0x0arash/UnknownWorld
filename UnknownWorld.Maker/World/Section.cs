@@ -56,6 +56,11 @@ namespace UnknownWorld.Maker.World
             return c;
         }
 
+        internal void DrawCell(char v, int x, int y)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update()
         {
             //cells.ForEach(o => {
@@ -76,7 +81,14 @@ namespace UnknownWorld.Maker.World
 
         public void Initialize()
         {
-            //cells.ForEach(o => o.Initialize());
+            cells = new List<Cell>();
+            for (int i = 0; i < width; i++)
+            {
+                for (int j = 0; j < height; j++)
+                {
+                    cells.Add(GenerateRandomCell());
+                }
+            }
         }
 
         public void Draw()
@@ -85,7 +97,7 @@ namespace UnknownWorld.Maker.World
                 throw new Exception("This Section has not been initialized");
 
 
-            //cells.ForEach(o => o.Draw());
+            cells.ForEach(o => o.Draw());
         }
     }
 }

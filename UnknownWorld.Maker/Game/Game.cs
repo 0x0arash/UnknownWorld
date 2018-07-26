@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnknownWorld.Core.Interfaces;
-using UnknownWorld.Maker.World;
 
-namespace UnknownWorld.Core.Game
+namespace UnknownWorld.Maker.Game
 {
     public class Game : IUpdate, IInitialize, IDraw
     {
-        private World world;
+        private World.World world;
 
         private int worldSeed;
         private int startSection;
@@ -28,7 +27,7 @@ namespace UnknownWorld.Core.Game
 
         public void Initialize()
         {
-            world = new World(worldSeed, sectionCount, startSection);
+            world = new World.World(worldSeed, sectionCount, startSection);
             world.Initialize();
         }
 
